@@ -1,0 +1,84 @@
+/* Certifications Component */
+.certifications {
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.certification-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.certification-card {
+  background-color: var(--background);
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cert-header {
+  margin-bottom: 1rem;
+}
+
+.cert-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.cert-organization {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.cert-year {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.cert-actions {
+  margin-top: auto;
+}
+
+.cert-button {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.cert-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-1px);
+}
+

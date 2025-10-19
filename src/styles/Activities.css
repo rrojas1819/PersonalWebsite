@@ -1,0 +1,13 @@
+/* Activities Section - Main Layout Only */
+.activities {
+  padding: 4rem 0;
+  background-color: var(--background);
+}
+
+.activities-content {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
+}
+

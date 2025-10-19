@@ -20,6 +20,7 @@ function Header() {
         <ul className="nav-links">
           <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>About</a></li>
           <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects') }}>Projects</a></li>
+          <li><a href="#activities" onClick={(e) => { e.preventDefault(); scrollToSection('activities') }}>Activities</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact') }}>Contact</a></li>
         </ul>
       </nav>
