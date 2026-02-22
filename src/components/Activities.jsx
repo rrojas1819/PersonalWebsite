@@ -12,8 +12,8 @@ function Activities() {
       company: 'UPS',
       duration: 'Jul 2021 – Dec 2021',
       location: 'Linden, NJ',
-      description: 'Assisted customers with domestic and international package shipments, including imports and exports.  Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
-      skills: ['Customer Service', 'Logistics', 'Problem Solving', 'Communication', 'Data Management']
+      description: 'Assisted customers with domestic and international package shipments, including imports and exports. Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
+      skills: ['Customer Service', 'Logistics', 'Problem Solving', 'Communication']
     }
   ]
 
@@ -22,8 +22,8 @@ function Activities() {
       title: 'Founder/Coordinator',
       organization: 'CodeReview Circle (Self-Led)',
       duration: 'Sep 2024 – Present',
-      description: 'Founded and coordinate a peer-run community focused on collaborative learning and skill development. Organize events and study sessions to help students advance their technical skills and career readiness.',
-      achievements: ['Coordinated events for 40+ students', 'Led group study sessions for certification exams', 'Organized peer-run mock interviews', '4+ participants earned certifications']
+      description: 'Coordinated peer-run events for 10+ students, such as code reviews, collaborative coding sessions, and workshops. Led group study sessions for certification exam prep, resulting in 4+ participants earning certifications.',
+      achievements: ['Coordinated events for 10+ students', 'Led group study sessions for certification exams', '4+ participants earned certifications']
     }
   ]
 

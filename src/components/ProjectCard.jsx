@@ -1,8 +1,18 @@
 import '../styles/ProjectCard.css'
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, onSelect }) {
+  const handleCardClick = () => {
+    if (onSelect && project.id) onSelect(project.id)
+  }
+
   return (
-    <div className="project-card">
+    <div
+      className={`project-card ${onSelect ? 'project-card-clickable' : ''}`}
+      onClick={onSelect ? handleCardClick : undefined}
+      role={onSelect ? 'button' : undefined}
+      tabIndex={onSelect ? 0 : undefined}
+      onKeyDown={onSelect ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleCardClick() } } : undefined}
+    >
       <div className="project-image">
         {project.logo ? (
           <img 
@@ -24,7 +34,14 @@ function ProjectCard({ project }) {
         </div>
         <div className="project-links">
           {project.links && project.links.map((link, index) => (
-            <a key={index} href={link.url} className="project-link">
+            <a
+              key={index}
+              href={link.url}
+              className="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
               {link.text}
             </a>
           ))}

@@ -1,10 +1,13 @@
 import '../styles/SectionTitle.css'
 
-function SectionTitle({ children, className = '' }) {
+function SectionTitle({ children, subtitle, className = '' }) {
   return (
-    <h2 className={`section-title ${className}`.trim()}>
-      {children}
-    </h2>
+    <div className="section-header">
+      <h2 className={`section-title ${className}`.trim()}>
+        {children}
+      </h2>
+      {subtitle && <p className="section-subtitle">{subtitle}</p>}
+    </div>
   )
 }
 

@@ -1,0 +1,151 @@
+.project-detail {
+  background-color: var(--background);
+  padding: 4rem 0 6rem;
+  min-height: 100vh;
+}
+
+.project-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.project-detail-actions {
+  margin-bottom: 2rem;
+}
+
+.project-detail-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.project-detail-image-wrap {
+  width: 100%;
+  max-height: 320px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.project-detail-image.coursify-logo {
+  object-position: center center;
+}
+
+.project-detail-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: var(--bg-secondary);
+}
+
+.project-detail-bullets {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.project-detail-bullets li {
+  margin-bottom: 0.75rem;
+}
+
+.project-detail-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.project-detail-video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
+}
+
+.project-detail-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.project-detail-video-credit {
+  margin: 0 0 2rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.project-detail-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.project-detail-description p {
+  margin: 0 0 1rem;
+}
+
+.project-detail-description p:last-child {
+  margin-bottom: 0;
+}
+
+.project-detail-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-tech .tech-tag {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-detail-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-detail-links .project-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-detail-links .project-link:hover {
+  color: var(--accent-hover);
+  font-weight: 700;
+}

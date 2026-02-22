@@ -1,29 +1,30 @@
+import { useEffect } from 'react'
 import ProjectCard from './ProjectCard'
 import SectionTitle from './SectionTitle'
 import Button from './Button'
 import '../styles/Projects.css'
 import { projectsData } from '../data/projectsData'
 
-const FEATURED_COUNT = 3
-
-function Projects({ onViewAllProjects, onSelectProject }) {
-  const featured = projectsData.slice(0, FEATURED_COUNT)
+function ProjectsPage({ onBack, onSelectProject }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [])
 
   return (
-    <section id="projects" className="projects section">
+    <section id="projects-page" className="projects section projects-page">
       <div className="container">
-        <SectionTitle subtitle="Check out some of my recent work">Featured Projects</SectionTitle>
+        <SectionTitle subtitle="All projects">Projects</SectionTitle>
         <div className="projects-grid">
-          {featured.map((project) => (
+          {projectsData.map((project) => (
             <ProjectCard key={project.id} project={project} onSelect={onSelectProject} />
           ))}
         </div>
         <div className="projects-view-all">
-          <Button onClick={onViewAllProjects} variant="primary">View All Projects</Button>
+          <Button onClick={onBack} variant="secondary">Back to Home</Button>
         </div>
       </div>
     </section>
   )
 }
 
-export default Projects
+export default ProjectsPage
