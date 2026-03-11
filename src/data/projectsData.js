@@ -2,7 +2,28 @@ import coursifyLogo from '../assets/coursify.png'
 import strandsLogo from '../assets/strands.png'
 import websiteLogo from '../assets/website.png'
 import milesplitLogo from '../assets/MilesplitParser.png'
+import recessLogo from '../assets/RecessLogo.jpg'
+import recessScreenshot from '../assets/RecessExample.jpg'
+
 export const projectsData = [
+  {
+    id: 'recess',
+    title: 'Recess',
+    description: 'React Native and Expo mobile app that encourages intentional breaks and supports live campus location sharing. Supabase (PostgreSQL) backend with real-time presence tracking, row-level security, and Apple Maps campus hotspots.',
+    technologies: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'Apple Maps'],
+    links: [
+      { text: 'Devpost', url: 'https://devpost.com/software/recess-bi6pj4' },
+      { text: 'GitHub', url: 'https://github.com/mduddin112203/Recess' }
+    ],
+    imagePlaceholder: 'Recess',
+    logo: recessLogo,
+    screenshot: recessScreenshot,
+    bullets: [
+      'Engineered a mobile application using React Native and Expo to encourage intentional break-taking and support live campus location sharing.',
+      'Architected and deployed a Supabase (PostgreSQL) backend with real-time presence tracking, row-level security policies, and customizable friend-based visibility permissions.',
+      'Integrated Apple Maps to display active campus hotspots and monitor live zone engagement.'
+    ]
+  },
   {
     id: 'strands',
     title: 'Strands',

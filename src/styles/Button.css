@@ -22,7 +22,7 @@
   background: var(--accent-hover);
   border-color: var(--accent-hover);
   color: #0D1117;
-  box-shadow: 0 0 18px var(--accent-glow);
+  box-shadow: none;
 }
 
 .btn-secondary {

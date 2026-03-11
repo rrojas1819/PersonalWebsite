@@ -8,11 +8,30 @@ import Education from './Education'
 function Activities() {
   const workExperience = [
     {
+      title: 'Full-Stack Developer (Contract)',
+      company: 'Ductworks Inc',
+      duration: 'Feb 2026 – Present',
+      location: 'Plainfield, NJ',
+      description:
+        'Designed and deployed a production-ready static website using React (Vite/Astro) hosted on AWS Amplify. Architected a serverless hosting solution that reduced projected infrastructure costs by 80%+ while maintaining responsive, SEO-friendly pages and modern contact flows.',
+      skills: ['React', 'Vite', 'Astro', 'AWS Amplify', 'Serverless', 'SEO', 'Responsive Design']
+    },
+    {
+      title: 'Supply Chain Document Processing Extern (Pfizer)',
+      company: 'Extern',
+      duration: 'Feb 2026 – Present',
+      location: 'Remote',
+      description:
+        'Built Python pipelines to extract and structure data from real-world pharmaceutical and supply-chain PDFs using PyMuPDF and pdfplumber, plus OCR workflows with Tesseract/PaddleOCR/EasyOCR. Prototyped a RAG document search using LlamaIndex with FAISS/Chroma and shipped a Gradio demo for document upload and cited responses.',
+      skills: ['Python', 'PyMuPDF', 'pdfplumber', 'OCR', 'Tesseract', 'PaddleOCR', 'EasyOCR', 'LlamaIndex', 'FAISS', 'Chroma', 'Gradio']
+    },
+    {
       title: 'UPS Store Associate',
       company: 'UPS',
       duration: 'Jul 2021 – Dec 2021',
       location: 'Linden, NJ',
-      description: 'Assisted customers with domestic and international package shipments, including imports and exports. Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
+      description:
+        'Assisted customers with domestic and international package shipments, including imports and exports. Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
       skills: ['Customer Service', 'Logistics', 'Problem Solving', 'Communication']
     }
   ]
@@ -33,6 +52,12 @@ function Activities() {
       organization: 'Amazon Web Services',
       year: '2025',
       credentialUrl: 'https://www.credly.com/badges/85a5fe66-8f5b-423b-bd7d-f1e25cf34778/linked_in_profile'
+    },
+    {
+      title: 'Stevens QuackHacks “Mindfulness and Wellbeing Track” Winner',
+      organization: 'Stevens Institute of Technology',
+      year: 'Feb 2026',
+      credentialUrl: 'https://devpost.com/software/recess-bi6pj4'
     }
   ]
 

@@ -13,12 +13,12 @@ function ProjectCard({ project, onSelect }) {
       tabIndex={onSelect ? 0 : undefined}
       onKeyDown={onSelect ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleCardClick() } } : undefined}
     >
-      <div className="project-image">
+      <div className={`project-image ${project.title === 'Recess' ? 'recess-image-wrap' : ''}`}>
         {project.logo ? (
           <img 
             src={project.logo} 
             alt={project.title} 
-            className={`project-logo ${project.title === 'Coursify' ? 'coursify-logo' : ''}`} 
+            className={`project-logo ${project.title === 'Coursify' ? 'coursify-logo' : ''} ${project.title === 'Recess' ? 'recess-logo' : ''}`} 
           />
         ) : (
           <div className="project-placeholder">{project.imagePlaceholder}</div>
