@@ -40,7 +40,7 @@ function Activities() {
     {
       title: 'Founder/Coordinator',
       organization: 'CodeReview Circle (Self-Led)',
-      duration: 'Sep 2024 – Present',
+      duration: 'Sep 2024 – Jan 2026',
       description: 'Coordinated peer-run events for 10+ students, such as code reviews, collaborative coding sessions, and workshops. Led group study sessions for certification exam prep, resulting in 4+ participants earning certifications.',
       achievements: ['Coordinated events for 10+ students', 'Led group study sessions for certification exams', '4+ participants earned certifications']
     }
@@ -50,7 +50,7 @@ function Activities() {
     {
       title: 'AWS Certified Cloud Practitioner',
       organization: 'Amazon Web Services',
-      year: '2025',
+      year: 'Aug 2025',
       credentialUrl: 'https://www.credly.com/badges/85a5fe66-8f5b-423b-bd7d-f1e25cf34778/linked_in_profile'
     },
     {
