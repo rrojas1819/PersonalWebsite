@@ -3,7 +3,7 @@ import '../styles/Certifications.css'
 function Certifications({ certifications }) {
   return (
     <div className="certifications">
-      <h2 className="section-subtitle">Certifications</h2>
+      <h2 className="section-subtitle">Certifications &amp; Awards</h2>
       <div className="certification-list">
         {certifications.map((cert, index) => (
           <div key={index} className="certification-card">

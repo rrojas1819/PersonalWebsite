@@ -16,7 +16,7 @@
 .project-card:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 20px var(--accent-glow);
+  box-shadow: none;
 }
 
 .project-image {
@@ -31,6 +31,10 @@
   border-bottom: 1px solid var(--card-border);
   overflow: hidden;
   position: relative;
+}
+
+.project-image.recess-image-wrap {
+  background: #000;
 }
 
 .project-placeholder {
@@ -60,6 +64,16 @@
 .coursify-logo {
   object-fit: cover;
   object-position: center center;
+}
+
+.recess-logo {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 0.1rem;
+  background: #000;
+  border-radius: 12px;
 }
 
 .project-content {

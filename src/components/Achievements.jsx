@@ -15,8 +15,6 @@ function Achievements() {
     { text: 'Research or project 9' },
   ]
 
-  const categoryTags = ['Technical Leadership', 'Hackathon Winner', 'Research', 'Gaming']
-
   return (
     <section id="achievements" className="achievements section">
       <div className="container">
@@ -29,11 +27,6 @@ function Achievements() {
               <span className="achievement-card-icon" aria-hidden />
               <span className="achievement-card-text">{item.text}</span>
             </div>
-          ))}
-        </div>
-        <div className="achievements-tags">
-          {categoryTags.map((tag) => (
-            <span key={tag} className="achievement-tag">{tag}</span>
           ))}
         </div>
       </div>

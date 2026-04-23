@@ -37,6 +37,10 @@
   justify-content: center;
 }
 
+.project-detail-image-wrap.recess-image-wrap {
+  background: #000;
+}
+
 .project-detail-image {
   width: 100%;
   height: 100%;
@@ -62,6 +66,16 @@
   background: var(--bg-secondary);
 }
 
+.project-detail-image.recess-logo {
+  object-fit: contain;
+  max-width: 70%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 0.25rem;
+  background: #000;
+  border-radius: 16px;
+}
+
 .project-detail-bullets {
   margin: 0 0 1.5rem;
   padding-left: 1.25rem;
@@ -76,6 +90,18 @@
 
 .project-detail-bullets li:last-child {
   margin-bottom: 0;
+}
+
+.project-detail-screenshot {
+  margin: 2rem auto 1.5rem;
+  max-width: 260px;
+}
+
+.project-detail-screenshot-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
 }
 
 .project-detail-video-wrap {

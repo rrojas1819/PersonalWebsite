@@ -12,7 +12,8 @@ function Activities() {
       company: 'UPS',
       duration: 'Jul 2021 – Dec 2021',
       location: 'Linden, NJ',
-      description: 'Assisted customers with domestic and international package shipments, including imports and exports. Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
+      description:
+        'Assisted customers with domestic and international package shipments, including imports and exports. Improved communication and problem-solving skills by handling daily logistics challenges and customer needs.',
       skills: ['Customer Service', 'Logistics', 'Problem Solving', 'Communication']
     }
   ]
@@ -21,7 +22,7 @@ function Activities() {
     {
       title: 'Founder/Coordinator',
       organization: 'CodeReview Circle (Self-Led)',
-      duration: 'Sep 2024 – Present',
+      duration: 'Sep 2024 – Jan 2026',
       description: 'Coordinated peer-run events for 10+ students, such as code reviews, collaborative coding sessions, and workshops. Led group study sessions for certification exam prep, resulting in 4+ participants earning certifications.',
       achievements: ['Coordinated events for 10+ students', 'Led group study sessions for certification exams', '4+ participants earned certifications']
     }
@@ -31,8 +32,14 @@ function Activities() {
     {
       title: 'AWS Certified Cloud Practitioner',
       organization: 'Amazon Web Services',
-      year: '2025',
+      year: 'Aug 2025',
       credentialUrl: 'https://www.credly.com/badges/85a5fe66-8f5b-423b-bd7d-f1e25cf34778/linked_in_profile'
+    },
+    {
+      title: 'Stevens QuackHacks “Mindfulness and Wellbeing Track” Winner',
+      organization: 'Stevens Institute of Technology',
+      year: 'Feb 2026',
+      credentialUrl: 'https://devpost.com/software/recess-bi6pj4'
     }
   ]
 

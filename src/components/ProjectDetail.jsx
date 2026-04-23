@@ -31,12 +31,12 @@ function ProjectDetail({ project, onBack }) {
         <h1 className="project-detail-title">{project.title}</h1>
 
         {!videoEmbed && (
-          <div className="project-detail-image-wrap">
+          <div className={`project-detail-image-wrap ${project.title === 'Recess' ? 'recess-image-wrap' : ''}`}>
             {project.logo ? (
               <img
                 src={project.logo}
                 alt={project.title}
-                className={`project-detail-image ${project.title === 'Coursify' ? 'coursify-logo' : ''}`}
+                className={`project-detail-image ${project.title === 'Coursify' ? 'coursify-logo' : ''} ${project.title === 'Recess' ? 'recess-logo' : ''}`}
               />
             ) : (
               <div className="project-detail-placeholder">{project.imagePlaceholder}</div>
@@ -82,6 +82,16 @@ function ProjectDetail({ project, onBack }) {
             {descriptionParagraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
+          </div>
+        )}
+
+        {project.screenshot && (
+          <div className="project-detail-screenshot">
+            <img
+              src={project.screenshot}
+              alt={`${project.title} screenshot`}
+              className="project-detail-screenshot-image"
+            />
           </div>
         )}
 
